@@ -6,7 +6,7 @@ module CanCan
       end
 
       def self.override_conditions_hash_matching?(subject, conditions)
-        conditions.any? { |k,v| !k.kind_of?(Symbol) }
+        false
       end
 
       def self.matches_conditions_hash?(subject, conditions)
