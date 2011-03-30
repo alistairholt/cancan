@@ -6,7 +6,7 @@ module CanCan
       end
 
       def self.override_conditions_hash_matching?(subject, conditions)
-        false
+        true
       end
 
       def self.matches_conditions_hash?(subject, conditions)
